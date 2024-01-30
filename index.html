@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="poems.js"></script>
+
+    <style>
+        body, html {
+            margin: 0;
+            height: 100%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-auto-rows: 100px;
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .grid-item {
+            border: 1px solid black;
+            position: relative;
+        }
+
+        /* .grid-item:hover::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(30deg);
+            width: 70%;
+            height: 70%;
+            background-color: blue;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            transition: all 0.3s ease;
+        } */
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h3>与謝 蕪村 による俳句の断片 | Haiku fragments by Buson</h3>
+    </div>
+    <div class="grid-container">
+      <!-- Grid items will be added here by JavaScript -->
+    </div>
+    <script src="app.js"></script>
+    <script src="fillGrids.js"></script>
+</body>
+</html>
